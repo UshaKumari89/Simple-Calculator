@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Calculator</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculator</title>
+  <link href="style.css" rel="stylesheet">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <div class = "Calculator-grid">
-        <div class = "output">
-            <div class = "preveious-operand"></div>
-            <div class = "current-operand"></div>
-        </div>
-        <button class = "span-two">AC</button>
-        <button >DEL</button>
-        <button >÷</button>
-        <button >1</button>
-        <button >2</button>
-        <button >3</button>
-        <button >*</button>
-        <button >4</button>
-        <button >5</button>
-        <button >6</button>
-        <button >+</button>
-        <button >7</button>
-        <button >8</button>
-        <button >9</button>
-        <button >-</button>
-        <button >.</button>
-        <button >0</button>
-        <button class = "span-two" >=</button>
-</div>
-  <script src="app.js"></script>
+  <div class="calculator-grid">
+    <form name = "form">
+    <input type="text" name = "answer" id = "textStyle">
+   
+    <input type="button" value="1" onclick = "form.answer.value += '1'" >
+    <input type="button" value="2" onclick ="form.answer.value += '2'">
+    <input type="button" value="3" onclick ="form.answer.value += '3'">
+    
+    <input type="button" value="4" onclick ="form.answer.value += '4'">
+    <input type="button" value="5" onclick ="form.answer.value += '5'">
+    <input type="button" value="6" onclick ="form.answer.value += '6'">
+    
+    <input type="button" value="7" onclick ="form.answer.value += '7'">
+    <input type="button" value="8" onclick ="form.answer.value += '8'">
+    <input type="button" value="9" onclick ="form.answer.value += '9'">
+    
+    <input type="button" value="+" onclick ="form.answer.value += '+'">
+    <input type="button" value="-" onclick ="form.answer.value += '-'">
+    <input type="button" value="*" onclick ="form.answer.value += '*'">
+    
+    <input type="button" value="/" onclick ="form.answer.value += '/'">
+    <input type="button" value="=" onclick ="form.answer.value = eval(form.answer.value)">
+    <input type="button" value="0" onclick ="form.answer.value += '0'">
+    
+    <br><br>
+    <input type="button" value=" Clear All " id = "clearAll" onclick = " form.answer.value = ' ' ">
+    
+    <br><br>
+    </form>
+  </div>
 </body>
 </html>
