@@ -9,6 +9,7 @@
   <script src="script.js" defer></script>
 </head>
 <body>
+  <!--Body of a calculator-->
   <div class="calculator-grid">
     <form name = "form">
     <input type="text" name = "answer" id = "textStyle">
@@ -33,10 +34,10 @@
     <input type="button" value="=" onclick ="form.answer.value = eval(form.answer.value)">
     <input type="button" value="0" onclick ="form.answer.value += '0'">
     
-    <br><br>
+  
     <input type="button" value=" Clear All " id = "clearAll" onclick = " form.answer.value = ' ' ">
     
-    <br><br>
+  
     </form>
   </div>
 </body>
